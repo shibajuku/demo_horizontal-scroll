@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Scroll</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hilosiva/OlayoutCSS@beta/dist/olayout.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@1&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&amp;display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="ol-container">
+      <div class="ol-spacer" data-py="min:1 md:2 lg:3">
+        <div class="ol-flex" data-direction="min:column lg:row" data-align="lg:middle lg:justify">
+          <h1 class="header__title">Horizontal Scroll</h1>
+          <nav class="globalNav">
+            <ul class="globalNav__list ol-flex" data-align="lg:middle lg:end" data-gap="min:1 md:2 lg:3">
+              <li><a href="#concept">Concept</a></li>
+              <li><a href="#menu">Memu</a></li>
+              <li><a href="#access">Access</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <img src="img/hero.webp" alt="" width="2000" height="1333" decoding="async">
+    </div>
+    <section id="concept" class="ol-spacer" data-py="min:4 md:6 lg:8">
+      <div class="ol-container">
+
+
+        <div class="ol-grid" data-cols="min:1 lg:2" data-gap="min:2 lg:6">
+          <div class="ol-grid__item">
+            <h2 class="heading">Concept</h2>
+            <div class="ol-spacer" data-py="min:2 md:2 lg:2">
+              <p class="headline ol-text" data-word="min:keep">最高のひとときを、最高のお料理で。</p>
+
+              <div class="ol-spacer ol-text" data-pt="min:2 md:3 lg:4" data-space-y="min:2: lg:4" data-word="min:keep">
+                <p>
+                  食に対するこだわりには妥協しない。
+                </p>
+                <p>これが当店のコンセプトです。</p>
+                <p>
+                  これほどまでにこだわったことはかつてあっただろうか。いや、なかったはずだ。ひょっとしたらあったかもしれないが、いや、なかったはずだ。
+                </p>
+                <p>
+                  たとえ御注文頂いてから時間がかかったとして、納得行くまで何度も何度も作り直す。
+                </p>
+                <p>
+                  ランチにご注文いただいた料理が、ディナーの提供になることもしばしば。
+                </p>
+                <p>
+                  メニューに合ったとしても、食材に納得できなければ提供をキャンセルすることだってある。
+                </p>
+                <p>
+                  これほどまでにこだわったことはかつてあっただろうか。いや、なかったはずだ。ひょっとしたらあったかもしれないが、いや、なかったはずだ。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="ol-grid__item" data-over="lg:right">
+            <figure class="embed sticky">
+              <img src="img/about.webp" alt="" width="800" height="044" decoding="async" loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="menu" class="ol-spacer" data-py="min:4 md:6 lg:8">
+      <div class="ol-container">
+        <h2 class="heading -center">Menu</h2>
+        <div class="ol-spacer" data-py="min:2 md:2 lg:2">
+          <p class="headline ol-text" data-word="min:keep" data-align="min:center">誰もが納得する、至高の味。</p>
+        </div>
+      </div>
+      <div class="ol-spacer" data-py="min:2 md:3 lg:4">
+        <div class="horizontalScroll">
+          <div class="horizontalScroll__body">
+
+            <section id="page1" class="horizontalScroll__item">
+              <div class="ol-flex__item" data-grow="min:1" data-shrink="min:1">
+                <div class="ol-container">
+                  <div class="ol-grid" data-cols="min:2" data-gap="min:1 lg:5">
+                    <div class="ol-grid__item">
+                      <figure class="embed full">
+                        <img src="img/photo01.webp" alt="" width="800" height="1198" decoding="async" loading="lazy">
+                      </figure>
+                    </div>
+                    <div class="ol-grid__item">
+                      <div class="menu">
+                        <h3 class="menu__title">伝説のボロネーゼ</h3>
+
+                        <p class="menu__desc ol-text" data-word="min:keep">
+                          御注文を頂いてから合いびき肉を精肉に買いに行く、こだわりのボロネーゼ。小麦粉にこだわった市販のパスタを使い指定の時間じっくり茹でて仕上げる。レトルトで作る最高のボロネーゼ。
+                        </p>
+
+                        <dl class="menu__meta">
+                          <div>
+                            <dt>カロリー</dt>
+                            <dd>2,000 cal</dd>
+                          </div>
+                          <div>
+                            <dt>金額</dt>
+                            <dd>¥ 1,100</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="page2" class="horizontalScroll__item">
+              <div class="ol-flex__item" data-grow="min:1" data-shrink="min:1">
+                <div class="ol-container">
+                  <div class="ol-grid" data-cols="min:2" data-gap="min:1 lg:5">
+                    <div class="ol-grid__item">
+                      <figure class="embed full">
+                        <img src="img/photo02.webp" alt="" width="800" height="1198" decoding="async" loading="lazy">
+                      </figure>
+                    </div>
+                    <div class="ol-grid__item">
+                      <div class="menu">
+                        <h3 class="menu__title">春キャベツのロールキャベツ</h3>
+
+                        <p class="menu__desc ol-text" data-word="min:keep">
+                          採れたてのキャベツを使ったロールキャベツ。おそらくトマトとかを使ったソースで煮込んでいる。すこしきのこも入っている。
+                        </p>
+
+                        <dl class="menu__meta">
+                          <div>
+                            <dt>カロリー</dt>
+                            <dd>1,200 cal</dd>
+                          </div>
+                          <div>
+                            <dt>金額</dt>
+                            <dd>¥ 300</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="page3" class="horizontalScroll__item">
+              <div class="ol-flex__item" data-grow="min:1" data-shrink="min:1">
+                <div class="ol-container">
+                  <div class="ol-grid" data-cols="min:2" data-gap="min:1 lg:6">
+                    <div class="ol-grid__item">
+                      <figure class="embed full">
+                        <img src="img/photo03.webp" alt="" width="800" height="1198" decoding="async" loading="lazy">
+                      </figure>
+                    </div>
+                    <div class="ol-grid__item">
+                      <div class="menu">
+                        <h3 class="menu__title">チョコレートソースクッキー</h3>
+                        <p class="menu__desc ol-text" data-word="min:keep">
+                            市販のクッキーに市販のチョコレートソースを掛けた当店人気No1のスイーツ。口の中で広がるチョコレートの味が忘れられず、お家で再現するお客様も多数いらっしゃいます。</p>
+                        <dl class="menu__meta">
+                          <div>
+                            <dt>カロリー</dt>
+                            <dd>1,000 cal</dd>
+                          </div>
+                          <div>
+                            <dt>金額</dt>
+                            <dd>¥ 1,500</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="page4" class="horizontalScroll__item">
+              <div class="ol-flex__item" data-grow="min:1" data-shrink="min:1">
+                <div class="ol-container">
+                  <div class="ol-grid" data-cols="min:2" data-gap="min:1 lg:6">
+                    <div class="ol-grid__item">
+                      <figure class="embed full">
+                        <img src="img/photo05.webp" alt="" width="800" height="1198" decoding="async" loading="lazy">
+                      </figure>
+                    </div>
+                    <div class="ol-grid__item">
+                      <div class="menu">
+                        <h3 class="menu__title">伊勢海老のボイル</h3>
+                        <p class="menu__desc ol-text" data-word="min:keep">
+                            その日獲れた伊勢海老をたっぷりのお湯でボイルした一品。どこまでも続く潮の香りがあの日の思い出を呼び覚ます。
+                        </p>
+                        <dl class="menu__meta">
+                          <div>
+                            <dt>カロリー</dt>
+                            <dd>1,300 cal</dd>
+                          </div>
+                          <div>
+                            <dt>金額</dt>
+                            <dd>¥ 900</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <section id="access" class="ol-spacer" data-py="min:4 md:6 lg:8">
+      <div class="ol-container">
+        <h2 class="heading -right">Access</h2>
+        <div class="ol-spacer" data-py="min:2 md:2 lg:2">
+          <p class="headline ol-text" data-word="min:keep" data-align="min:right">最高の立地</p>
+        </div>
+        <div class="ol-spacer" data-py="min:2 md:2 lg:2">
+          <p class="ol-text" data-word="min:keep" data-align="min:right">東京都架空区架空1-2-3-2001</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="ol-container">
+      <div class="ol-spacer" data-pt="min:8 md:10 lg:12" data-pb="min:4 md:6 lg:8">
+        <p><small>© 2023 Shibata Hironori</small></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
