@@ -19,6 +19,15 @@ footer {
   color: #ccc;
 }
 
+.globalNav {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .globalNav {
+    display: block;
+  }
+}
+
 .globalNav__list a {
   display: block;
   text-decoration: none;
@@ -82,8 +91,13 @@ footer {
   letter-spacing: 0.04em;
   line-height: 1.5;
 }
+.menu__desc {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
 .menu__meta {
   margin-top: auto;
+  font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
 .menu__meta > div {
